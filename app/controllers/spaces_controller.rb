@@ -1,6 +1,8 @@
 class SpacesController < ApplicationController
   before_action :set_space, only: [:show, :edit, :update, :destroy]
 
+  
+
   # GET /spaces
   # GET /spaces.json
   def index

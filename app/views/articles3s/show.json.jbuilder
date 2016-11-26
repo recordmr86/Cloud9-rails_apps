@@ -1,0 +1,1 @@
+json.partial! "articles3s/articles3", articles3: @articles3

@@ -1,6 +1,14 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
+  def emails
+    
+  end
+  
+  def faq
+    
+  end
+
   # GET /articles
   # GET /articles.json
   def index

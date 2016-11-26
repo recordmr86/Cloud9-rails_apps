@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :articles3s
+  resources :articles2s
+  resources :tests
   resources :spaces
   resources :messages
   resources :articles
@@ -13,6 +16,14 @@ Rails.application.routes.draw do
   get 'about', to: 'welcome#about'
   
   get 'info' , to: 'welcome#info'
+  
+  get 'emails' , to: 'articles#emails'
+  
+  get 'faq' , to: 'articles#faq'
+  
+  get 'test' , to: 'welcome#test'
+  
+  get 'test2' , to: 'test#test2'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
